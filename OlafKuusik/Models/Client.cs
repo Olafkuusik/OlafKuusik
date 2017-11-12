@@ -11,9 +11,11 @@ namespace OlafKuusik.Models
     {
         public int ID { get; set; }
 
+        [Required]
         [StringLength(60, MinimumLength = 2)]
         public string Name { get; set; }
 
+        [Required]
         [Range(16,80)]
         public int Age { get; set; }
 

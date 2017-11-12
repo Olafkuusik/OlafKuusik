@@ -36,6 +36,7 @@ namespace OlafKuusik.Controllers
         }
 
         // GET: VideoGames/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -46,6 +47,7 @@ namespace OlafKuusik.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include = "ID,Name,ItemsInStock,ReleasedDate")] VideoGame videoGame)
         {
             if (ModelState.IsValid)
@@ -59,6 +61,7 @@ namespace OlafKuusik.Controllers
         }
 
         // GET: VideoGames/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,6 +81,7 @@ namespace OlafKuusik.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit([Bind(Include = "ID,Name,ItemsInStock,ReleasedDate")] VideoGame videoGame)
         {
             if (ModelState.IsValid)
@@ -90,6 +94,7 @@ namespace OlafKuusik.Controllers
         }
 
         // GET: VideoGames/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -107,6 +112,7 @@ namespace OlafKuusik.Controllers
         // POST: VideoGames/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult DeleteConfirmed(int id)
         {
             VideoGame videoGame = db.VideoGames.Find(id);

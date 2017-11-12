@@ -197,6 +197,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201711121607515_InitialCreate.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201711121607515_InitialCreate.Designer.cs">
+      <DependentUpon>201711121607515_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
+    <Compile Include="Migrations\ClientDbContext\201711121548570_InitialCreate.cs" />
+    <Compile Include="Migrations\ClientDbContext\201711121548570_InitialCreate.Designer.cs">
+      <DependentUpon>201711121548570_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ClientDbContext\Configuration.cs" />
+    <Compile Include="Migrations\VideoGameDBContext\201711121549406_InitialCreate.cs" />
+    <Compile Include="Migrations\VideoGameDBContext\201711121549406_InitialCreate.Designer.cs">
+      <DependentUpon>201711121549406_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\VideoGameDBContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -291,6 +306,17 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201711121607515_InitialCreate.resx">
+      <DependentUpon>201711121607515_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClientDbContext\201711121548570_InitialCreate.resx">
+      <DependentUpon>201711121548570_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\VideoGameDBContext\201711121549406_InitialCreate.resx">
+      <DependentUpon>201711121549406_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

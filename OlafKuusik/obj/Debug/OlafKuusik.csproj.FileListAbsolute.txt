@@ -69,3 +69,7 @@ C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.csprojRes
 C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.csproj.CoreCompileInputs.cache
 C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.dll
 C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.pdb
+C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.Migrations.ClientDbContext.InitialCreate.resources
+C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.csproj.GenerateResource.Cache
+C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.Migrations.ApplicationDbContext.InitialCreate.resources
+C:\Users\olafk\source\repos\OlafKuusik\OlafKuusik\obj\Debug\OlafKuusik.Migrations.VideoGameDBContext.InitialCreate.resources

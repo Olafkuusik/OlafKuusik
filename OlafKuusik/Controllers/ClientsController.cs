@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using OlafKuusik.Models;
 
 namespace OlafKuusik.Controllers
-{
+{   [Authorize]
     public class ClientsController : Controller
     {
         private ClientDbContext db = new ClientDbContext();
